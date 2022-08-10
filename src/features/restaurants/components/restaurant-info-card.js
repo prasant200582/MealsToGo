@@ -4,6 +4,8 @@ import { Card } from "react-native-paper";
 import styled from "styled-components";
 import { SvgXml } from "react-native-svg";
 
+import { Spacer } from "../../../components/spacer/spacer.component";
+
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
 //import { red100 } from "react-native-paper/lib/typescript/styles/colors";
@@ -74,9 +76,9 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
                   CLOSED TEMPORARILY
                 </Text>
               )}
-              <View style={{ paddingLeft: 16 }} />
+              <Spacer variant="left.large" />
               {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
-              <View style={{ paddingLeft: 16 }} />
+              <Spacer variant="left.large" />
               <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
             </SectionEnd>
           </Rating>
