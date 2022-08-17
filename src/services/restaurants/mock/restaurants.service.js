@@ -21,5 +21,5 @@ restaurantsRequest()
     console.log(transformedResponse);
   })
   .catch((err) => {
-    console.log("error");
+    console.log(err);
   });
